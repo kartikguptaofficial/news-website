@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=IBM+Plex+Sans+Thai+Looped:wght@100;200;300;400;500;600&family=Lobster&family=Merienda+One&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,700&family=Oleo+Script:wght@400;700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,500&family=Oswald:wght@700&family=Pangolin&family=Piazzolla:ital,opsz,wght@0,8..30,300;0,8..30,400;0,8..30,500;1,8..30,300;1,8..30,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100&family=Quicksand:wght@300;400;500;600&family=Qwigley&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&family=Rubik+Puddles&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.whole-page{
+    width: 100%;
+}
+
+.carousel{
+    position: relative;
+}
+
+.carousel img{
+    height: 35rem;
+    opacity: 0.7;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: right;
+    height: 5rem;
+    padding-right: 2rem;
+}
+
+nav h2{
+    line-height: 5rem;
+    font-family: 'Merienda One';
+    font-weight: bold;
+    font-size: 3rem;
+    color: rgb(54, 54, 78);
+}
+
+nav h2 span{
+    font-size: 2rem;
+    color: blue;
+}
+
+.main-content{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+}
+
+.main-content h1{
+    font-family: 'Qwigley', sans-serif;
+    font-size: 6rem;
+    font-weight: bold;
+    color: rgb(177, 123, 31);
+}
+
+.news-section .search-input{
+    width: 80%;
+    margin: 2rem auto;
+    margin-bottom: 0;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid blue;
+    margin-left: 10%;
+}
+
+.news-section h2{
+    width: 80%;
+    margin: 2rem auto;
+    font-family: 'Piazzolla';
+    text-align: center;
+}
+
+.news-section h2 span{
+    font-family: 'Roboto', sans-serif;
+}
+
+.card{
+    width: 80%;
+    margin: auto;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+
+.card img{
+    height: 100%;
+}
+
+.bottom-btns{
+    width: 80%;
+    margin: auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media (max-width: 420px) {
+    .card{
+        width: 90%;
+    }
+
+    .bottom-btns{
+        width: 90%;
+    }
+
+    .carousel img{
+        height: 30rem;
+    }
+
+    nav h2{
+        font-size: 2rem;
+    }
+    
+    nav h2 span{
+        font-size: 1.2rem;
+    }
+
+    .main-content h1{
+        font-size: 4.5rem;
+    }
+
+    .news-section h2{
+        font-size: 1rem;
+    }
+
+    .main-content{
+        top: 35%;
+    }
+}
